@@ -1,1 +1,95 @@
 
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Johnys Fußballwelt</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #101713;
+      color: white;
+    }
+    header {
+      background: #1b2920;
+      padding: 30px 20px;
+      border-bottom: 3px solid #64d887;
+    }
+    header h1 { margin: 0; }
+    nav {
+      background: #202c24;
+      padding: 16px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #8beaab;
+      text-decoration: none;
+    }
+    main { padding: 24px 20px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: #1b2920;
+      border: 1px solid #344b3a;
+      border-radius: 12px;
+      padding: 22px;
+    }
+    .card h2 { color: #8beaab; }
+    footer {
+      padding: 24px;
+      text-align: center;
+      color: #aab8ae;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>⚽ Johnys Fußballwelt</h1>
+    <p>Deine Vereine. Deine Wettbewerbe. Deine Geschichte.</p>
+  </header>
+
+  <nav>
+    <a href="#wettbewerbe">Wettbewerbe</a>
+    <a href="#vereine">Vereine</a>
+    <a href="#spieler">Spieler</a>
+    <a href="#spiele">Spiele & Tabellen</a>
+  </nav>
+
+  <main>
+    <h2>Willkommen in meiner Fußballwelt!</h2>
+    <p>Hier findest du alle Informationen zu meiner eigenen Fußballwelt.</p>
+
+    <div class="cards">
+      <section class="card" id="wettbewerbe">
+        <h2>🏆 Wettbewerbe</h2>
+        <p>Ligen, Pokale und Saisons.</p>
+      </section>
+      <section class="card" id="vereine">
+        <h2>🛡️ Vereine</h2>
+        <p>Vereinsprofile, Kader und Titel.</p>
+      </section>
+      <section class="card" id="spieler">
+        <h2>👤 Spieler</h2>
+        <p>Spielerprofile und Statistiken.</p>
+      </section>
+      <section class="card" id="spiele">
+        <h2>📊 Spiele & Tabellen</h2>
+        <p>Ergebnisse, Spielpläne und Tabellen.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    Johnys Fußballwelt · Mein eigenes Fußball-Datenportal
+  </footer>
+</body>
+</html>
+
+
